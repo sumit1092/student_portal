@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- heading -->
+        <div class="rect-1">
+            <p>Student Portal</p>
+        </div>
+
+        <!-- body -->
+        <div class="rect-2">
+
+            <!-- search -->
+            <div class="search">
+                <textarea name="search" id="search-input" placeholder="Search"></textarea>
+                <div class="btn">
+                    <button onclick="handleSearch()">Search</button>
+                </div>
+            </div>
+
+            <!-- table -->
+            <div class="sort">
+                <button onclick="sortData('AtoZ')">Sort A -> Z</button>
+                <button onclick="sortData('ZtoA')">Sort Z -> A</button>
+                <button onclick="sortData('marks')">Sort By Marks</button>
+                <button onclick="sortData('passing')">Sort By Passing</button>
+                <button onclick="sortData('class')">Sort By Class</button>
+                <button onclick="sortData('gender')">Sort By Gender</button>
+            </div>
+
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <table id="male-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+            <table id="female-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
